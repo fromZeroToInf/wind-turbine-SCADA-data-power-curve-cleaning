@@ -1,0 +1,27 @@
+[project]
+name = "wt-powercurve-cleaning"
+version = "0.1.0"
+description = "A simple function for normal behavior modeling for wind turbine SCADA data."
+authors = [
+    {name = "Shin-Young Hur", email = "todo"},
+]
+dependencies = ["pandas>=3.0.2", "numpy>=2.4.4", "psutil>=7.2.2", "joblib>=1.5.3", "tqdm>=4.67.3", "pyarrow>=23.0.1"]
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+[dependency-groups]
+test = [
+    "pytest>=9.0.3",
+]
+dev = [
+    "ipykernel>=7.2.0",
+]
