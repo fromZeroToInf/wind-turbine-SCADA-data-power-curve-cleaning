@@ -135,7 +135,19 @@ class pcf:
         minWindSpeed: float = 5.0,
         nJobs: int | None = None,
     ) -> None:
-        
+        """Applies power-curve filtering. Writes csv/parquet files to outDir.
+
+        Args:
+            inputDir (str): Make sure only relevant files are present.
+            outDir (str): Directory to save files.
+            powerCurve (pd.DataFrame): This table must contain the cols windSpec and powerSpec.
+            windSpec (str): Column name used in powerCurve and files in inputDir.
+            powerSpec (str): Column name used in powerCurve and files in inputDir
+            windowSize (int): Data points may be in transition to outside of the powerMargin
+            powerMargin (float, optional): Define upper and lower bound of the power curve. Defaults to 150 (kW).
+            minWindSpeed (float, optional): Minimum windspeed for the filter. Defaults to 5.0.
+            nJobs (int | None, optional): If None, nJobs are estimated by cpu count and RAM usage. Defaults to None.
+        """
         inputDir = Path(inputDir)
         outDir = Path(outDir)
         outDir.mkdir(parents=True, exist_ok=True)
