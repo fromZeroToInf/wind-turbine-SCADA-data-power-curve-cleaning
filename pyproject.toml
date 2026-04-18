@@ -1,9 +1,9 @@
 [project]
 name = "wt-powercurve-cleaning"
 version = "0.1.0"
-description = "A simple function for normal behavior modeling for wind turbine SCADA data."
+description = "A lightweight function for normal behavior modeling for wind turbine SCADA data."
 authors = [
-    {name = "Shin-Young Hur", email = "syh_82@outlook.de"},
+    {name = "fromZeroToInf", email = "syh_82@outlook.de"},
 ]
 dependencies = ["pandas>=3.0.2", "numpy>=2.4.4", "psutil>=7.2.2", "joblib>=1.5.3", "tqdm>=4.67.3", "pyarrow>=23.0.1"]
 requires-python = ">=3.12"
