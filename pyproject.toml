@@ -1,5 +1,5 @@
 [project]
-name = "wt-powercurve-cleaning"
+name = "wtpcc"
 version = "0.1.0"
 description = "A lightweight function for normal behavior modeling for wind turbine SCADA data."
 authors = [
