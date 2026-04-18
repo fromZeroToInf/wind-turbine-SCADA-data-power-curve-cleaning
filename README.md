@@ -14,7 +14,11 @@ The package filters SCADA observations by comparing measured power values agains
 - optional parallel processing with automatic job estimation based on available RAM
 
 ## Installation
+```bash
+pip install wtpcc
+```
 
+# From Source
 ```bash
 pip install .
 or
@@ -22,3 +26,4 @@ pdm install
 or 
 pip install -e .
 ```
+
